@@ -174,5 +174,12 @@ Aplicar os conceitos estudados na disciplina Desenvolvimento Web III, especialme
 - Organização e estilização de interfaces web.
 
 ---
+## Aplicação publicada
+
+O Beer Map está hospedado na Vercel e pode ser acessado pelo endereço:
+
+https://beer-map-zeta.vercel.app/
+
+A aplicação utiliza React e Next.js para consumir dados da API pública SampleAPIs, sem necessidade de desenvolver um backend próprio.
 
 **FATEC Registro — Desenvolvimento Web III — Atividade 02, 2º bimestre.**

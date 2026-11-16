@@ -1,0 +1,82 @@
+
+/* HEADER - MOBILE FIRST */
+
+.header {
+  width: 100%;
+  background-color: #a05a00;
+  color: white;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Logo e nome Beer Map */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Imagem do logo */
+.logoImagem {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Descrição do site */
+.descricao {
+  font-size: 13px;
+  line-height: 1.5;
+  color: white;
+}
+
+/* Efeito ao passar o mouse */
+.logo:hover {
+  opacity: 0.9;
+}
+
+/* Acessibilidade pelo teclado */
+.logo:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* TABLET E DESKTOP */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .logoImagem {
+    width: 48px;
+    height: 48px;
+  }
+
+  .descricao {
+    font-size: 14px;
+  }
+}

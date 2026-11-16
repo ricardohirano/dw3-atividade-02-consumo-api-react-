@@ -1,0 +1,45 @@
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.botao,
+.ativo {
+  padding: 12px 24px;
+  border: 1px solid #a05a00;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao {
+  background-color: white;
+  color: #a05a00;
+}
+
+.botao:hover {
+  background-color: #fff3e0;
+}
+
+.ativo {
+  background-color: #a05a00;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .filtros {
+    gap: 8px;
+  }
+
+  .botao,
+  .ativo {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,84 @@
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  gap: 20px;
+  padding: 32px 16px;
+}
+
+.garrafas {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  height: 125px;
+}
+
+.garrafa {
+  width: 45px;
+  height: 110px;
+  animation: subir 1.2s ease-in-out infinite;
+}
+
+.garrafa:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.garrafa:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.corpo {
+  fill: #f5b942;
+  stroke: #a05a00;
+  stroke-width: 2.5;
+}
+
+.rotulo {
+  fill: #fff3d5;
+}
+
+.tampa {
+  fill: none;
+  stroke: #a05a00;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.texto {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #a05a00;
+  text-align: center;
+}
+
+@keyframes subir {
+  0%, 65%, 100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-18px);
+  }
+}
+
+@media (min-width: 768px) {
+  .garrafa {
+    width: 54px;
+    height: 116px;
+  }
+
+  .texto {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .garrafa {
+    animation: none;
+  }
+}
